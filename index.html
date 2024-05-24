@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content">
+    <main>
+        <section>
+            <h1 class="title">
+                Заметки
+            </h1>
+            <button type="button" class="add_button">
+                Добавить
+            </button>
+        </section>
+        <section>
+            <ul class="notes-list">
+
+            </ul>
+        </section>
+    </main>
+
+    <div class="popup">
+        <div class="popup__content">
+            <button type="button" class="popup__close-button"></button>
+            <form class="popup__form" name="editnote" novalidate>
+                <textarea id="popup__input_type_title" type="text" name="title" class="popup__input popup__input_type_title" placeholder="Заголвок"></textarea>
+                <textarea id="popup__input_type_text" type="text" name="description" class="popup__input popup__input_type_text" placeholder="Текст заметки" minlength="1" required></textarea>
+                <button type="submit" class="popup__save-button">Сохранить</button>
+            </form>
+    </div>
+
+    <template id="note-template">
+        <li class="note">
+            <h2 class="note__title">
+                Заголовок
+            </h2>
+            <p class="note__text">
+                Текст заметки
+            </p>
+            <button type="button" class="note__edit-button">Редактировать</button>
+            <button type="button" class="note__delete-button">Удалить</button>
+        </li>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
