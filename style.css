@@ -32,39 +32,40 @@ ul {
     background: #002f6c;
     border-radius: 8px;
     border: none;
-    transition: visibility 0s, background 0.3s;
+    transition: background 0.3s;
 }
 
 .add_button:hover,
 .note__delete-button:hover,
 .note__edit-button:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(30, 144, 255, 0.8);
     cursor: pointer;
 }
 
 .note {
     position: relative;
     margin: 10px auto;
-    padding: 10px;
+    padding: 20px;
     width: 90%;
     border: solid, 1px, #000;
+    border-radius: 10px;
     list-style-type: none;
+    transition: background 0.3s;
 }
 
 .note:hover {
     background: rgba(0, 0, 0, 0.1);
-    cursor: pointer;
 }
 
 .note__edit-button {
     position: absolute;
-    top: 2px;
+    top: 5px;
     left: 0;
 }
 
 .note__delete-button {
     position: absolute;
-    top: 2px;
+    top: 5px;
     right: 22px;
 }
 
@@ -116,15 +117,10 @@ ul {
     position: absolute;
     top: -36px;
     right: -34px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    transition: visibility 0s, opacity 0.3s;
     padding: 0;
     margin: 0;
     cursor: pointer;
+    transition: opacity 0.3s;
 }
   
 .popup__close-button:hover {
@@ -140,14 +136,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000;
+    background: #002f6c;
     border-radius: 8px;
     border: none;
-    transition: visibility 0s, background 0.3s;
+    transition: background 0.3s;
     margin-top: 48px;
 }
 
 .popup__save-button:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(30, 144, 255, 0.8);
     cursor: pointer;
 }

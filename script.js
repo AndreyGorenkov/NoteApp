@@ -1,5 +1,10 @@
-//////////////////////////////////////////////////
-// Список заметок для инициализации
+const addButton = document.querySelector('.add_button');
+const notePopup = document.querySelector('.popup');
+const titleInput = notePopup.querySelector('.popup__input_type_title');
+const textInput = notePopup.querySelector('.popup__input_type_text');
+const closeButton = document.querySelector('.popup__close-button');
+const notesContainer = document.querySelector('.notes-list');
+const formElement = document.forms.editnote;
 
 let initialNotes = [
     {
@@ -15,9 +20,6 @@ let initialNotes = [
       text: "Записаться на мойку, номер телефона 77-77-77",
     }
 ];
-
-///////////////////////////////////////////////////
-// Функции для открытия и закрытия модального окна
 
 function openModal(element) {
 
@@ -53,15 +55,13 @@ function handleOverlay(event) {
   
 }
 
-//////////////////////////////////////////////////////////////
-
-const addButton = document.querySelector('.add_button');
-const notePopup = document.querySelector('.popup');
-const titleInput = notePopup.querySelector('.popup__input_type_title');
-const textInput = notePopup.querySelector('.popup__input_type_text');
-const closeButton = document.querySelector('.popup__close-button');
-const notesContainer = document.querySelector('.notes-list');
-const formElement = document.forms.editnote;
+// const addButton = document.querySelector('.add_button');
+// const notePopup = document.querySelector('.popup');
+// const titleInput = notePopup.querySelector('.popup__input_type_title');
+// const textInput = notePopup.querySelector('.popup__input_type_text');
+// const closeButton = document.querySelector('.popup__close-button');
+// const notesContainer = document.querySelector('.notes-list');
+// const formElement = document.forms.editnote;
 
 addButton.addEventListener('click', () => openModal(notePopup));
 closeButton.addEventListener('click', () => closeModal(notePopup));
